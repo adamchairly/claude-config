@@ -1,4 +1,8 @@
-WebSearch is always allowed. Use it if neccesary.
+**WebSearch is always allowed. Use it if neccesary.**
+
+# Backend
+
+Use the following principles below, when working on a backend-related task or plan.
 
 ## Architecture & layering
  
