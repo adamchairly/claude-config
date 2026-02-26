@@ -2,7 +2,7 @@ WebSearch is always allowed. Use it if neccesary.
 
 ## Architecture & layering
  
-Use **Clean Architecture** boundaries:
+Use **Clean Architecture** boundaries if the architecture uses it:
  
 - **API (Presentation)**
   - Controllers / endpoints only
@@ -18,6 +18,7 @@ Use **Clean Architecture** boundaries:
 - **Infrastructure**
   - Persistence, external services, integrations
  
+ 
 ### Explicit rules
  
 - ❌ **Repository pattern is forbidden**
@@ -31,10 +32,8 @@ Use **Clean Architecture** boundaries:
 - Leads to anemic abstractions
 - Conflicts with CQRS projections
  
----
  
- 
-## CQRS with MediatR
+### CQRS with MediatR
  
 - Separate **Commands** and **Queries**
 - One request → one handler
@@ -49,7 +48,7 @@ Use **Clean Architecture** boundaries:
   - Pass it through
   - Use async all the way
  
-### Naming
+## Naming
 - Commands: `CreateXCommand`, `UpdateXCommand`, `DeleteXCommand`
 - Handlers: `XCommandHandler`, `XQueryHandler`
 - Queries: `GetXQuery`, `ListXQuery`
